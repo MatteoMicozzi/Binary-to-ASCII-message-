@@ -17,4 +17,7 @@ describe 'binary_to_decimal' do
   it 'would return from the input "1000" the output 8' do
     expect(binary_to_decimal("1000")).to eq(8)
   end
+  it 'would return from the input "10000" the output 16' do
+    expect(binary_to_decimal("10000")).to eq(16)
+  end
 end
