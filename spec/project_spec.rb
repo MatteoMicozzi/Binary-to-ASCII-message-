@@ -50,7 +50,16 @@ describe 'decimal_to_ASCII()' do
 end
 
 describe 'binary_to_ASCII()' do
-  it 'would return for the imput the output' do
+  it 'would return for the imput "01001111" the output "O"' do
     expect(binary_to_ASCII('01001111')).to eq('O')
+  end
+  it 'would return for the imput "0100111101001011" the output "OK"' do
+    expect(binary_to_ASCII("0100111101001011")).to eq('OK')
+  end
+  it 'would return for the imput "010011110100101100100001" the output "OK!"' do
+    expect(binary_to_ASCII("010011110100101100100001")).to eq('OK!')
+  end
+  it 'would return for the imput "010010000110010101101100011011000110111100100001" the output "Hello!"' do
+    expect(binary_to_ASCII("010010000110010101101100011011000110111100100001")).to eq("Hello!")
   end
 end

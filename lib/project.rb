@@ -22,5 +22,13 @@ def decimal_to_ASCII(decimal)
 end
 
 def binary_to_ASCII(binary)
-  decimal_to_ASCII(binary_to_decimal(binary))
+  bytes = binary
+  ascii_letters = []
+  while bytes.length != 0
+    ascii_letters.push(bytes.slice!(0..7))
+  end
+  ascii_letters.map! { |byte| binary_to_decimal(byte) }
+  ascii_letters.map! { |letter| decimal_to_ASCII(letter) }
+  ascii_letters = ascii_letters.join
+  return ascii_letters
 end
