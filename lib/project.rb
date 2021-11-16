@@ -15,5 +15,8 @@ def binary_to_decimal(binary)
 end
 
 def decimal_to_ASCII(decimal)
-  return false
+  if decimal < 32
+    return false
+  end
+  return decimal.chr
 end

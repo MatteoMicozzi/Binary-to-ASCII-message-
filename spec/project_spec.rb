@@ -38,4 +38,10 @@ describe 'decimal_to_ASCII()' do
   it 'would return for the imput 31 the output false' do
     expect(decimal_to_ASCII(31)).to eq(false)
   end
+  it 'would return for the imput 32 the output "space"' do
+    expect(decimal_to_ASCII(32)).to eq(" ")
+  end
+  it 'would return for the imput 126 the output "~"' do
+    expect(decimal_to_ASCII(126)).to eq("~")
+  end
 end

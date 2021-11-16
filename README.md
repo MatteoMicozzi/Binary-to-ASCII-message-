@@ -26,11 +26,12 @@ Input => Output:
 '10000010' => 130
 
 (decimal to ASCII character) decimal_to_ASCII()
-32 <= decimal <= 255   => true -- if not false or throw error
+32 <= decimal <= 126   => true -- if not false or throw error
+
 31 => false
 32 => ' '
-255 => 'ÿ'
-256 => false
+126 => '~'
+127 => false
 65 => 'A'
 98 => 'b'
 67 => 'C'
