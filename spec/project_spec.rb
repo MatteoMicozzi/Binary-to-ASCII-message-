@@ -44,4 +44,13 @@ describe 'decimal_to_ASCII()' do
   it 'would return for the imput 126 the output "~"' do
     expect(decimal_to_ASCII(126)).to eq("~")
   end
+  it 'would return for the imput 127 the output false' do
+    expect(decimal_to_ASCII(127)).to eq(false)
+  end
+end
+
+describe 'binary_to_ASCII()' do
+  it 'would return for the imput the output' do
+    expect(binary_to_ASCII('01001111')).to eq('O')
+  end
 end

@@ -15,8 +15,12 @@ def binary_to_decimal(binary)
 end
 
 def decimal_to_ASCII(decimal)
-  if decimal < 32
+  if decimal < 32 || decimal > 126
     return false
   end
   return decimal.chr
+end
+
+def binary_to_ASCII(binary)
+  decimal_to_ASCII(binary_to_decimal(binary))
 end
