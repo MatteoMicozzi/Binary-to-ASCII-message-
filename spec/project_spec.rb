@@ -5,4 +5,7 @@ describe 'binary_to_decimal' do
   it 'would return from the input "0" the output 0' do
     expect(binary_to_decimal("0")).to eq(0)
   end
+  it 'would return from the input "1" the output 1' do
+    expect(binary_to_decimal("1")).to eq(1)
+  end
 end

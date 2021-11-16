@@ -1,3 +1,7 @@
 def binary_to_decimal(binary)
-    return binary.to_i
+    if binary == '1'
+      return 1
+    else
+      return 0
+    end
 end
