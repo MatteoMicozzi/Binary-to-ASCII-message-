@@ -1,5 +1,5 @@
 def binary_to_decimal(binary)
-  values = [1, 2]
+  values = [1, 2, 4]
   bit_position = 0
   value = 0
   code = binary.split(//).reverse!
