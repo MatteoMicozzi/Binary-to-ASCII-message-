@@ -33,3 +33,9 @@ describe 'binary_to_decimal' do
     expect(binary_to_decimal("10000010")).to eq(130)
   end
 end
+
+describe 'decimal_to_ASCII()' do
+  it 'would return for the imput 31 the output false' do
+    expect(decimal_to_ASCII(31)).to eq(false)
+  end
+end

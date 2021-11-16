@@ -13,3 +13,7 @@ def binary_to_decimal(binary)
 
   return decimal_value
 end
+
+def decimal_to_ASCII(decimal)
+  return false
+end
