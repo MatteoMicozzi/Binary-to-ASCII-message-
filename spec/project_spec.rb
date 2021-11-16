@@ -23,4 +23,7 @@ describe 'binary_to_decimal' do
   it 'would return from the input "100000" the output 32' do
     expect(binary_to_decimal("100000")).to eq(32)
   end
+  it 'would return from the input "1000000" the output 64' do
+    expect(binary_to_decimal("1000000")).to eq(64)
+  end
 end
